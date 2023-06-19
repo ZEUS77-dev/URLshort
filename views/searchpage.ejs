@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/search">
+        <div class="user-box fw-semibold">
+          <input type="text" name="input"  autocomplete="off" required>
+          <label>Enter your keyword</label>
+        </div>
+        <button type="submit" class="btn btn-light">
+          Search
+        </button>
+      </form>
+    <% if (locals.packet) { %>
+        <table class="table table-sm table-dark">
+            <thead>
+                <th>S.No</th>
+                <th>shortid</th>
+                <th>redirectURL</th>
+                <th>note</th>
+                <th>clicks</th>
+            </thead>
+            <tbody>
+                <% packet.forEach((packet,index) => { %>
+                 <tr>
+                    <td><%= index+1 %></td>
+                    <td><%= packet.shortid %></td>
+                    <td><%= packet.redirectURL %></td>
+                    <td><%= packet.note %></td>
+                    <td><%= packet.visitedHistory.length %></td>
+                 </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <% } %>
+</body>
+</html>

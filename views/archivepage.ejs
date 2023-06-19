@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (locals.data) { %>
+        <table class="table table-sm table-dark">
+            <thead>
+                <th>S.No</th>
+                <th>shortid</th>
+                <th>redirectURL</th>
+                <th>note</th>
+                <th>clicks</th>
+            </thead>
+            <tbody>
+                <% data.forEach((data,index) => { %>
+                 <tr>
+                    <td><%= index+1 %></td>
+                    <td><%= data.shortid %></td>
+                    <td><%= data.redirectURL %></td>
+                    <td><%= data.note %></td>
+                    <td><%= data.visitedHistory.length %></td>
+                 </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <% } %>
+    
+</body>
+</html>

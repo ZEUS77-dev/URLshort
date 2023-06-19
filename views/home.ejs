@@ -24,7 +24,7 @@
       </button>
       <% if (locals.id) { %>
         <div class="pt-5">
-        <p class="text-white">"Generated URL: <a href="http://localhost:8002/url/<%= id %>">http://localhost:8002/url/<%= id %></a></p>
+        <p class="text-white">"Generated URL: <a style="color:#f6ff00;" href="http://localhost:<%=process.env.PORT%>/url/<%= id %>">http://localhost:<%=process.env.PORT%>/url/<%= id %></a></p>
        </div>
         <% } %>
     </form>

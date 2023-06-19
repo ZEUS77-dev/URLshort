@@ -20,11 +20,11 @@
         <label>Note</label>
       </div>
       <button type="submit" class="btn btn-light">
-        shrink
+        Shrink
       </button>
       <% if (locals.id) { %>
         <div class="pt-5">
-        <p class="text-white">"Generated URL: <a style="color:#f6ff00;" href="http://localhost:<%=process.env.PORT%>/url/<%= id %>">http://localhost:<%=process.env.PORT%>/url/<%= id %></a></p>
+        <p class="text-dark">Generated URL: <a style="color:#000000;" href="http://localhost:<%=process.env.PORT%>/url/<%= id %>">http://localhost:<%=process.env.PORT%>/url/<%= id %></a></p>
        </div>
         <% } %>
     </form>

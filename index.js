@@ -12,10 +12,8 @@ mongoose
     .connect(process.env.MONGO_URI)
     .then((e) => console.log('MongoDB connected'));
 
-
 app.set('view engine','ejs');
 app.set('views',path.resolve('./views'));
-
 
 //middleware
 app.use(express.static(path.join(__dirname,'public')));
@@ -33,7 +31,6 @@ app.get('/home',(req,res)=>{
     return res.render('home.ejs');
 });
 
-
 app.use('/url',urlRoute);
 
 app.get('/archive', async (req,res)=>{
@@ -42,8 +39,6 @@ app.get('/archive', async (req,res)=>{
         data : allurls,
     })
 });
-
-
 
 app.get('/url/:shortid',async (req,res)=>{
     const shortid = req.params.shortid;

@@ -72,6 +72,7 @@ body::before {
 }
 
   .login-box2{
+    transition: 1s ease-in;
     overflow: hidden;
     margin-left: 5%;
     margin-right: 5%;
@@ -82,4 +83,19 @@ body::before {
 	border-radius: 15px;
 	border: solid 4px #333;
 	box-shadow: -5px 5px #333;
+  }
+
+  .login-box2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: fade-in 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }

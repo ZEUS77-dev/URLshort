@@ -9,7 +9,7 @@ const urlRoute= require('./routes/url');
 const searchRoute = require('./routes/searchroute');
 
 mongoose
-    .connect(process.env.MONGO_URI)
+    .connect(process.env.MONGO_URL)
     .then((e) => console.log('MongoDB connected'));
 
 app.set('view engine','ejs');

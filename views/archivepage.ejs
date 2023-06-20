@@ -4,57 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="archivepage.css">
     <title>Archive</title>
-    <style>
-        body {background: #2b3035; height: 1500px;}
-        html {
-  scrollbar-face-color: #646464;
-  scrollbar-base-color: #646464;
-  scrollbar-3dlight-color: #646464;
-  scrollbar-highlight-color: #646464;
-  scrollbar-track-color: #000;
-  scrollbar-arrow-color: #000;
-  scrollbar-shadow-color: #646464;
-  scrollbar-dark-shadow-color: #646464;
-}
-
-::-webkit-scrollbar { width: 8px; height: 3px;}
-::-webkit-scrollbar-button {  background-color: #666; }
-::-webkit-scrollbar-track {  background-color: #646464;}
-::-webkit-scrollbar-track-piece { background-color: #000;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
-::-webkit-scrollbar-corner { background-color: #646464;}
-::-webkit-resizer { background-color: #666;}
-    </style>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-semibold" href="home">ShrinkIt🤏</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold" aria-current="page" href="home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold" href="search">Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold" href="archive">Archive</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
+<%- include('./partials/nav.ejs') %>
 <body>
     <% if (locals.data) { %>
-        <table class="table table-sm table-dark">
+      <div class="login-box2">
+        <table class="table table-sm table-light">
             <thead>
                 <th>S.No</th>
                 <th>shortid</th>
@@ -74,7 +31,9 @@
                 <% }); %>
             </tbody>
         </table>
+      </div>
         <% } %>
+      
     
 </body>
 </html>

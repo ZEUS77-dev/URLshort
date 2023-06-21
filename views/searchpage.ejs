@@ -28,7 +28,7 @@
         <table class="table table-sm table-light table-responsive">
             <thead>
                 <th>S.No</th>
-                <th>shortid</th>
+                <th>shortURL</th>
                 <th>redirectURL</th>
                 <th>note</th>
                 <th>clicks</th>
@@ -37,7 +37,7 @@
                 <% packet.forEach((packet,index) => { %>
                  <tr>
                     <td><%= index+1 %></td>
-                    <td><%= packet.shortid %></td>
+                    <td>https://shrinkit-dev.vercel.app/url/<%= packet.shortid %></td>
                     <td><%= packet.redirectURL %></td>
                     <td><%= packet.note %></td>
                     <td><%= packet.visitedHistory.length %></td>

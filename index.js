@@ -20,7 +20,6 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());  // or can use urlencoded 
 //express routes
-app.use(favicon(path.join(__dirname,'public','images','./public/link.ico')));
 
 
 app.get('/',(req,res)=>{

@@ -17,7 +17,7 @@ app.set('view engine','ejs');
 app.set('views',path.resolve('./views'));
 
 //middleware
-app.use(favicon(path.join(__dirname,'public','link.ico')));
+app.use(favicon(path.join(__dirname,'public','favicon.ico')));
 app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());  // or can use urlencoded 

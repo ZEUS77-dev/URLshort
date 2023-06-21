@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const URL = require('./models/url');
 const urlRoute= require('./routes/url');
 const searchRoute = require('./routes/searchroute');
+const favicon = require('serve-favicon');
 
 mongoose
     .connect(process.env.MONGO_URL)
@@ -16,6 +17,7 @@ app.set('view engine','ejs');
 app.set('views',path.resolve('./views'));
 
 //middleware
+app.use(favicon(path.join(__dirname,'public','link.ico')));
 app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());  // or can use urlencoded 

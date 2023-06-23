@@ -37,7 +37,7 @@
                 <% packet.forEach((packet,index) => { %>
                  <tr>
                     <td><%= index+1 %></td>
-                    <td>https://shrinkit-dev.vercel.app/url/<%= packet.shortid %></td>
+                    <td><%= process.env.DOMAIN_PRE%><%= packet.shortid %></td>
                     <td><%= packet.redirectURL %></td>
                     <td><%= packet.note %></td>
                     <td><%= packet.visitedHistory.length %></td>

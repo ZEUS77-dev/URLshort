@@ -57,7 +57,7 @@ The working of a URL shortener typically involves the following steps:
 
 Input: The user provides the long URL they want to shorten.
 
-Generation: The URL shortener uses a unique ID generation algorithm, such as nanoid, to create a short, alphanumeric code. This code serves as the key for the shortened URL.
+Generation: The URL shortener uses a unique ID generation algorithm, such as `nanoid`, to create a short, alphanumeric code. This code serves as the key for the shortened URL.
 
 Mapping: The short code is associated with the original long URL and stored in a database or data structure. This mapping ensures that the short code can be linked back to the original URL.
 

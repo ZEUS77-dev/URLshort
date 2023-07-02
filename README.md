@@ -3,7 +3,7 @@
   <h1 align="center">Shrinkit🤏</h1>
 
   <p align="center">
-    <a href="https://github.com/ZEUS77-dev/URLshort">https://github.com/ZEUS77-dev/URLshort</a>
+    <a href="shrinkit-dev.vercel.app/home">shrinkit-dev.vercel.app/home</a>
   </p>
 </p>
 

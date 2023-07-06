@@ -11,7 +11,7 @@
 
 ## About The Project
 
-This URL shortener is a simple yet powerful web application designed to condense long URLs into shorter, more manageable links. With this tool, users can create shortened links that are easier to share, remember, and track. The application provides a user-friendly interface, allowing users to quickly generate, search and manage their shortened URLs.
+This URL shortener is a simple yet powerful web application designed to condense long URLs into shorter, more manageable links. With this tool, users can create shortened links that are easier to share, remember, and track. The application provides a user-friendly interface, allowing users to quickly generate, search and manage their shortened URLs. This project follows MVC architecture.
 
 ## Built With
 

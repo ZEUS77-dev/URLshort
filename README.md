@@ -13,6 +13,17 @@
 
 This URL shortener is a simple yet powerful web application designed to condense long URLs into shorter, more manageable links. With this tool, users can create shortened links that are easier to share, remember, and track. The application provides a user-friendly interface, allowing users to quickly generate, search and manage their shortened URLs. This project follows MVC architecture.
 
+### Performance Report ( Lighthouse )
+<p align="center">
+ <img align="center" width="500" height="500" src="https://i.ibb.co/Qb85q2Q/image.png">
+</p>
+
+<p align="center">
+ (https://googlechrome.github.io/lighthouse/viewer/?gist=6c21baf4436811e25df90bdcc100f9ba)
+</p>
+
+
+
 ## Built With
 
 **Backend**

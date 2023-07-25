@@ -86,11 +86,11 @@ Backend Technologies: Building a URL shortener project provided an opportunity t
 
 Database Integration: Integrating a database, such as MongoDB, allowed for efficient storage and retrieval of data. Learning to work with databases enhanced your understanding of data modeling, CRUD operations, and managing data persistence in a web application.
 
-Frontend UI Designing: Designing the frontend user interface (UI) for the URL shortener project provided insights into creating a visually appealing and user-friendly experience. Learning frontend technologies like HTML, CSS, and JavaScript enabled you to design and implement intuitive UI components and improve the overall user experience.
+Frontend UI Designing: Designing the frontend user interface (UI) for the URL shortener project provided insights into creating a visually appealing and user-friendly experience. Learning frontend technologies like HTML, CSS, and JavaScript enabled me to design and implement intuitive UI components and improve the overall user experience.
 
 Project Architecture: Developing a URL shortener required considering the project's architecture and organizing code in a structured manner. This experience helped you understand the importance of modularization, separation of concerns, and maintaining a clean codebase. (MVC)
 
-API Development: Building a URL shortener involved designing and implementing APIs to handle URL shortening, redirection, and analytics. This exposed you to concepts such as RESTful API design, handling HTTP methods, request validation, and response formatting.
+API Development: Building a URL shortener involved designing and implementing APIs to handle URL shortening, redirection, and analytics. This provided exposure to concepts such as RESTful API design, handling HTTP methods, request validation, and response formatting.
 
 Deploying the URL shortener project using Vercel allowed for a seamless and straightforward deployment process. Understanding Vercel's platform and its features, such as automatic scaling, CDN caching, and easy integration with Git, simplified the deployment and ensured efficient hosting of the application.
 

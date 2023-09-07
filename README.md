@@ -3,6 +3,7 @@
   <h1 align="center">Shrinkit🤏</h1>
 
   <p align="center">
+    Deployment :- 
     <a href="https://shrinkit-dev.vercel.app/home">shrinkit-dev.vercel.app/home</a>
   </p>
 </p>
